@@ -117,10 +117,7 @@ class DataPanel(
 
     @property
     def data(self) -> BlockManager:
-        """Get the underlying data (excluding invisible rows).
-
-        To access underlying data with invisible rows, use `_data`.
-        """
+        """Get the underlying data."""
         return self._data
 
     def _set_data(self, value: Union[BlockManager, Mapping] = None):
